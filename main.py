@@ -19,7 +19,7 @@ TWILIO_ACCOUNT_SID = os.getenv("TWILIO_ACCOUNT_SID")
 TWILIO_AUTH_TOKEN = os.getenv("TWILIO_AUTH_TOKEN")
 TWILIO_WHATSAPP_FROM = os.getenv("TWILIO_WHATSAPP_FROM")
 
-USER1 = os.getenv("USER1")  # whatsapp:+91...
+USER1 = os.getenv("USER1")
 USER2 = os.getenv("USER2")
 
 TIMEZONE = os.getenv("TIMEZONE", "Asia/Kolkata")
@@ -435,4 +435,4 @@ if __name__ == "__main__":
     print(f"Drop time: {DROP_HOUR:02d}:{DROP_MINUTE:02d} IST")
     print(f"Daily check: {CHECK_HOUR:02d}:{CHECK_MINUTE:02d} IST")
 
-    app.run(host="0.0.0.0", port=5001)
+    app.run(host="0.0.0.0", port=5000)
